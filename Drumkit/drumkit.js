@@ -8,16 +8,19 @@
 	
 	const animateCrashOrRide = () => {
         crashRide.style.transform = 'rotate(0deg) scale(1.5)';
+		document.body.style.backgroundColor = '#316650';
 	};
 
 	const animateHiHatClosed = () => {
         hiHatTop.style.top = '171px';
       //  shrek.style.top ='70px';
+	  document.body.style.backgroundColor = '#E4A010';
         
     };
     const animateShrek =() => {
         shrek.style.top ='70px';
 		fedora.style.top ='80px';
+		
     };
     
     const animateDonkey=() => {
@@ -70,11 +73,13 @@
 	const removeCrashRideTransition = e => {
 		if(e.propertyName !== 'transform') return;
 		e.target.style.transform = 'rotate(-7.2deg) scale(1.5)';
+		document.body.style.backgroundColor = '#F75E25';
 	};
 
 	const removeHiHatTopTransition = e => {
 		if(e.propertyName !== 'top') return;
 		e.target.style.top = '166px';
+		document.body.style.backgroundColor = '#F75E25';
     };	
 
     const removeShrekTransition= e => {
